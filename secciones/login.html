@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>House of Marley - Auriculares</title>
+    <link rel="shortcut icon" href="../img/logo-titulo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="container d-flex">
+        <div class="container  mt-3">
+            <a href="#" class="mobileMenu-toggle" data-mobile-menu-toggle="menu" aria-controls="menu" aria-expanded="false"></a>
+            <div class="header-logo header-logo-left">
+               <a href="../index.html"><img src="../img/logo-rasta.png" alt="logo"> </a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light mt-3 mr-5">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="auriculares.html">Auriculares</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="parlantes.html">Parlantes</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link"  href="bandejas.html">Bandejas</a>       
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link "  href="proyecto.html" >Proyecto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link "  href="materiales.html" >Materiales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link "  href="registro.html" >Registro</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  active"  href="login.html" >Login</a>
+                  </li>
+                </ul>  
+              </div>
+            </div>
+          </nav>
+    </header> 
+    
+
+<div style="background-image: url(../img/fondo_contacto.jpg);background-size:cover; height: 100vh;">
+    <br><br>
+    <div class="container m-auto p-3 mb-5 mt-4" style="width: 50%; background-color: rgba(179, 161, 161, 0.6);border-radius: 20px;">
+        <div class="text-center">
+           <h1 class="h4 text-gray-900 mb-4">Bienvenido al Panel de Administración </h1>
+               <?php echo (isset($alert)) ? $alert : ''; ?>
+           </div>
+       <form action="" class="user" method = "POST" autocomplete="off">
+           <div class="mb-3">
+           <label for="exampleInputEmail1" class="form-label text-gray-900">usuario</label>
+           <input type="text" name="usuario" class="form-control " id="usuario" aria-describedby="emailHelp">
+           <div id="emailHelp" class="form-text text-gray-900">Ingrese su usuario</div>
+           </div>
+           <div class="mb-3">
+           <label for="exampleInputPassword1" class="form-label text-gray-900">Contraseña</label>
+           <input type="password" name="clave"class="form-control" id="clave">
+           </div>
+           
+           <button type="submit" class="btn btn-primary" style="border-radius: 10px;">Ingresar</button>
+       </form>
+ </div>
+ 
+    
+</div>
